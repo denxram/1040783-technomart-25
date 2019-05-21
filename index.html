@@ -10,9 +10,10 @@
   <header class="main-header">
     <div class="header-top">
       <a class="main-logo">Техномарт</a>
-      <ul class="search-form">
-        <li class="search">Поиск</li>
-      </ul>
+      <form class="search-form">
+        <label class="visually-hidden" for="search-line">Поиск</label>
+        <input class="search-icon" id="search-line" type="search" name="search" placeholder="Поиск:">
+      </form>
       <ul class="shop-block">
         <li>
           <a class="bookmark-header" href="#">Закладки: 0</a></li>
@@ -23,8 +24,8 @@
       </ul>
       <h1 class="desc">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div class="contacts-header">
-        <a class="number-phone-header" href="tel: +78125550555">+7 (812) 555-05-55</a>
         <address class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <a class="number-phone-header" href="tel: +78125550555">+7 (812) 555-05-55</a>
       </div>
       <ul class="profile-list">
         <li class="profile-list-header">
@@ -43,7 +44,7 @@
           <li>
             <a href="#">Компания</a></li>
           <li>
-            <a href="#">Каталог</a></li>
+            <a href="catalog.html">Каталог</a></li>
           <li>
             <a href="#">Новости</a></li>
           <li>
@@ -75,7 +76,7 @@
       <h2 class="about-us-title">Контакты</h2>
       <p class="about-us-text">Вы можете забрать товар сами, заехав в наш офис:</p>
       <img src="img/map-small.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      <a class="button" href="#">Заблудились? Напишите нам!</a>
+      <button class="button" type="button">Заблудились? Напишите нам!</button>
     </section>
   </main>
   <footer class="main-footer">
@@ -92,7 +93,7 @@
           <li>
             <a href="#">Новости</a></li>
           <li>
-            <a href="#">Каталог</a></li>
+            <a href="catalog.html">Каталог</a></li>
           <li>
             <a href="#">Доставка</a></li>
           <li>
@@ -128,8 +129,27 @@
           <a class="link-footer" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </section>
-    <img src="img/map-big.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
   </footer>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p><img src="img/map-big.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <button class="modal-close" type="button">Закрыть</button>
+    </p>
+  </section>
+  <section class="modal modal-login">
+    <form class="user-info">
+      <label class="modal-user-name" for="user-login">Ваше имя:</label>
+      <input class="login" id="user-login" name="login" type="text" placeholder="Имя Фамилия">
+      <label class="modal-user-email" for="user-email">Ваш e-mail:</label>
+      <input class="email" id="user-email" type="email" name="email" placeholder="email@example.com">
+      <label class="user-comment" for="comment-field">Текст письма:</label>
+      <textarea class="comment" name="comment" id="comment-field" cols="50" rows="5">В свободной форме</textarea>
+      <div class="dispatch-form">
+        <button class="button" type="submit">Отправить</button>
+      </div>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>
