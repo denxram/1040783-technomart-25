@@ -23,7 +23,7 @@
           <a class="checkout-button" href="#">Оформить заказ</a></li>
       </ul>
     </div>
-    <h3 class="desc">Интернет-магазин строительных материалов и инструментов для ремонта</h3>
+    <h1 class="desc">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <div class="contacts-header">
       <a class="number-phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
       <address class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -79,23 +79,42 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="form-filters" action=”https://echo.htmlacademy.ru” method="GET">
-        <h3 class="title-filters title-item">Производители:</h3>
-        <input class="brands-item" type="checkbox" name="bosch" id="bosch" checked>
-        <label class="brands-filters" for="bosch">Bosch</label>
-        <input class="brands-item" type="checkbox" name="interskol" id="interskol">
-        <label class="brands-filters" for="interskol">Интерскол</label>
-        <input class="brands-item" type="checkbox" name="makita" id="makita" checked>
-        <label class="brands-filters" for="makita">Makita</label>
-        <input class="brands-item" type="checkbox" name="dewalt" id="dewalt">
-        <label class="brands-filters" for="dewalt">Dewalt</label>
-        <input class="brands-item" type="checkbox" name="hitachi" id="hitachi">
-        <label class="brands-filters" for="hitachi">Hitachi</label>
-        <h3 class="title-filters title-item">Питание:</h3>
-        <input class="power-supply" type="radio" name="supply" id="accumulator" value="accumulator">
-        <label class="supply" for="accumulator">Аккумуляторные</label>
-        <input class="power-supply" type="radio" name="supply" id="network" value="network">
-        <label class="supply" for="network">Сетевые</label>
-        <button class="button-filters" type="submit">Показать</button>
+        <fieldset class="price-filters">
+          <p>Фильтр:</p>
+          <legend class="title-filters title-item">Цена:</legend>
+        </fieldset>
+        <fieldset class="item-filters">
+          <legend class="title-filters title-item">Производители:</legend>
+          <ul class="brands-list">
+            <li>
+              <input class="brands-item" type="checkbox" name="brands" value="bosch" id="bosch" checked>
+              <label class="brands-filters" for="bosch">Bosch</label></li>
+            <li>
+              <input class="brands-item" type="checkbox" name="brands" value="interskol" id="interskol">
+              <label class="brands-filters" for="interskol">Интерскол</label></li>
+            <li>
+              <input class="brands-item" type="checkbox" name="brands" value="makita" id="makita" checked>
+              <label class="brands-filters" for="makita">Makita</label></li>
+            <li>
+              <input class="brands-item" type="checkbox" name="brands" value="dewalt" id="dewalt">
+              <label class="brands-filters" for="dewalt">Dewalt</label></li>
+            <li>
+              <input class="brands-item" type="checkbox" name="brands" value="hitachi" id="hitachi">
+              <label class="brands-filters" for="hitachi">Hitachi</label></li>
+          </ul>
+        </fieldset>
+        <fieldset class="sypply-filters">
+          <legend class="title-filters title-item">Питание:</legend>
+          <ul class="type-supply">
+            <li>
+              <input class="power-supply" type="radio" name="supply" id="accumulator" value="accumulator">
+              <label class="supply" for="accumulator">Аккумуляторные</label></li>
+            <li>
+              <input class="power-supply" type="radio" name="supply" id="network" value="network">
+              <label class="supply" for="network">Сетевые</label></li>
+          </ul>
+        </fieldset>
+        <button class="button button-filters" type="submit">Показать</button>
       </form>
     </section>
     <section class="catalog">
@@ -112,7 +131,7 @@
             <b class="item-new-price">15500 Р.</b>
           </p>
           <div class="buttons-item-popup">
-            <button class="button-green" type="button">Купить</button>
+            <button class="button button-green" type="button">Купить</button>
             <a class="button-item-bookmarks" href="#">В закладки</a>
           </div>
         </li>
@@ -128,7 +147,7 @@
             <b class="item-new-price">25500 Р.</b>
           </p>
           <div class="buttons-item-popup">
-            <button class="button-green" type="button">Купить</button>
+            <button class="button button-green" type="button">Купить</button>
             <a class="button-item-bookmarks" href="#">В закладки</a>
           </div>
         </li>
@@ -144,7 +163,7 @@
             <b class="item-new-price">12500 Р.</b>
           </p>
           <div class="buttons-item-popup">
-            <button class="button-green" type="button">Купить</button>
+            <button class="button button-green" type="button">Купить</button>
             <a class="button-item-bookmarks" href="#">В закладки</a>
           </div>
         </li>
@@ -160,7 +179,7 @@
             <b class="item-new-price">15500 Р.</b>
           </p>
           <div class="buttons-item-popup">
-            <button class="button-green" type="button">Купить</button>
+            <button class="button button-green" type="button">Купить</button>
             <a class="button-item-bookmarks" href="#">В закладки</a>
           </div>
         </li>
@@ -176,7 +195,7 @@
             <b class="item-new-price">25500 Р.</b>
           </p>
           <div class="buttons-item-popup">
-            <button class="button-green" type="button">Купить</button>
+            <button class="button button-green" type="button">Купить</button>
             <a class="button-item-bookmarks" href="#">В закладки</a>
           </div>
         </li>
@@ -192,7 +211,7 @@
             <b class="item-new-price">12500 Р.</b>
           </p>
           <div class="buttons-item-popup">
-            <button class="button-green" type="button">Купить</button>
+            <button class="button button-green" type="button">Купить</button>
             <a class="button-item-bookmarks" href="#">В закладки</a>
           </div>
         </li>
@@ -208,7 +227,7 @@
             <b class="item-new-price">15500 Р.</b>
           </p>
           <div class="buttons-item-popup">
-            <button class="button-green" type="button">Купить</button>
+            <button class="button button-green" type="button">Купить</button>
             <a class="button-item-bookmarks" href="#">В закладки</a>
           </div>
         </li>
@@ -224,7 +243,7 @@
             <b class="item-new-price">25500 Р.</b>
           </p>
           <div class="buttons-item-popup">
-            <button class="button-green" type="button">Купить</button>
+            <button class="button button-green" type="button">Купить</button>
             <a class="button-item-bookmarks" href="#">В закладки</a>
           </div>
         </li>
@@ -240,7 +259,7 @@
             <b class="item-new-price">12500 Р.</b>
           </p>
           <div class="buttons-item-popup">
-            <button class="button-green" type="button">Купить</button>
+            <button class="button button-green" type="button">Купить</button>
             <a class="button-item-bookmarks" href="#">В закладки</a>
           </div>
         </li>
@@ -302,8 +321,8 @@
   <section class="modal">
     <h2 class="modal-title">Товар добавлен в корзину!</h2>
     <a href="#">Оформить заказ</a>
-    <button class="button-white" type="button">Продолжить покупки</button>
-    <button class="button-close" type="button">Закрыть</button>
+    <button class="button button-white" type="button">Продолжить покупки</button>
+    <button class="button button-close" type="button">Закрыть</button>
   </section>
 </body>
 
