@@ -10,7 +10,7 @@
   <header class="main-header">
     <div class="header-top">
       <a href="index.html">Техномарт</a>
-      <form class="search-form" action=”https://echo.htmlacademy.ru” method="GET">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
         <label class="visually-hidden" for="search-line">Поиск</label>
         <input class="search-icon" id="search-line" type="search" name="search" placeholder="Поиск:">
       </form>
@@ -77,15 +77,14 @@
     </ol>
     <h1 class="intro">ПЕРФОРАТОРЫ</h1>
     <section class="filters">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form class="form-filters" action=”https://echo.htmlacademy.ru” method="GET">
-        <fieldset class="price-filters">
-          <p>Фильтр:</p>
+      <h2 class="title-blocks">Фильтр:</h2>
+      <form class="form-filters" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="item-filters">
           <legend class="title-filters title-item">Цена:</legend>
         </fieldset>
         <fieldset class="item-filters">
           <legend class="title-filters title-item">Производители:</legend>
-          <ul class="brands-list">
+          <ul class="filters-list">
             <li>
               <input class="brands-item" type="checkbox" name="brands" value="bosch" id="bosch" checked>
               <label class="brands-filters" for="bosch">Bosch</label></li>
@@ -103,9 +102,9 @@
               <label class="brands-filters" for="hitachi">Hitachi</label></li>
           </ul>
         </fieldset>
-        <fieldset class="sypply-filters">
+        <fieldset class="item-filters">
           <legend class="title-filters title-item">Питание:</legend>
-          <ul class="type-supply">
+          <ul class="filters-list">
             <li>
               <input class="power-supply" type="radio" name="supply" id="accumulator" value="accumulator">
               <label class="supply" for="accumulator">Аккумуляторные</label></li>
