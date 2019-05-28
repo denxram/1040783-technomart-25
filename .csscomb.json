@@ -120,6 +120,7 @@
       "-webkit-overflow-scrolling"
     ],
     [
+      "font-family",
       "list-style",
       "list-style-position",
       "list-style-type",
@@ -135,7 +136,6 @@
       "font-weight",
       "font-size",
       "line-height",
-      "font-family",
       "vertical-align",
       "text-align",
       "direction",
