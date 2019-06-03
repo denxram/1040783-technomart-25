@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
-  <link
-    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic"
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,7 +15,7 @@
 <body>
   <header class="main-header">
     <div class="header-top-wrapper">
-      <div class="header-top">
+      <div class="container">
         <a class="main-logo-header" href="#"><img src="img/logo.png" width="220" height="47" alt="«Техномарт»"></a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
           <label class="visually-hidden" for="search-line">Поиск</label>
@@ -30,41 +31,39 @@
         </ul>
       </div>
     </div>
-    <div class="container-header">
-      <h1 class="desc">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <div class="contacts-header">
-        <a class="number-phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <address class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+    <div class="container">
+      <div class="header-container">
+        <h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <div class="contacts-header">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        </div>
+        <ul class="profile-list">
+          <li>
+            <a class="button-login-link" href="#">Войти</a></li>
+          <li>
+            <a class="button-check-in" href="#">Регистрация</a></li>
+        </ul>
       </div>
-      <ul class="profile-list">
-        <li class="profile-list-header">
-          <a href="button-login-link">
-            <div class="user-navigation">
-              <p class="login-link">Войти</p>
-            </div>
-          </a></li>
-        <li class="profile-list-header">
-          <a href="button-check-in">Регистрация</a></li>
-      </ul>
+      <nav class="navigation-header">
+        <ul class="site-navigation-header">
+          <li>
+            <a>Главная</a></li>
+          <li>
+            <a href="#">Компания</a></li>
+          <li>
+            <a href="catalog.html">Каталог</a></li>
+          <li>
+            <a href="#">Новости</a></li>
+          <li>
+            <a href="#">Спецпредложения</a></li>
+          <li>
+            <a href="#">Доставка</a></li>
+          <li>
+            <a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="navigation-header">
-      <ul class="site-navigation-header">
-        <li>
-          <a href="index.html">Главная</a></li>
-        <li>
-          <a href="#">Компания</a></li>
-        <li>
-          <a href="#">Каталог</a></li>
-        <li>
-          <a href="#">Новости</a></li>
-        <li>
-          <a href="#">Спецпредложения</a></li>
-        <li>
-          <a href="#">Доставка</a></li>
-        <li>
-          <a href="#">Контакты</a></li>
-      </ul>
-    </nav>
   </header>
   <main class="container">
     <section class="about-us">
@@ -84,70 +83,77 @@
       <section class="about-us-contact">
         <h2 class="about-us-title">Контакты</h2>
         <p class="about-us-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map-small.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <img src="img/map-small.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <button class="button button-red" type="button">Заблудились? Напишите нам!</button>
       </section>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer-wrapper">
-      <section class="container-footer">
-        <div class="logo-contacts">
-          <a class="main-logo-footer" href="index.html"><img src="img/logo-footer.png" alt="«Техномарт»" width="220"
-              height="68"></a>
-          <address class="address-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a class="number-phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </div>
-        <nav class="navigation-footer">
-          <ul class="site-navigation-footer">
-            <li>
-              <a href="#">Компания</a></li>
-            <li>
-              <a href="#">Новости</a></li>
-            <li>
-              <a href="#">Каталог</a></li>
-            <li>
-              <a href="#">Доставка</a></li>
-            <li>
-              <a href="#">Контакты</a></li>
-          </ul>
-          <ul class="navigation-features-footer">
-            <li>
-              <a href="#">Материалы</a></li>
-            <li>
-              <a href="#">Техника</a></li>
-            <li>
-              <a href="#">Инструмент</a></li>
-            <li>
-              <a href="#">Спецпредложения</a></li>
-          </ul>
-        </nav>
-      </section>
+      <div class="container">
+        <section class="container-footer">
+          <div class="logo-contacts">
+            <a class="main-logo-footer" href="index.html"><img src="img/logo-footer.png" alt="«Техномарт»" width="220"
+                height="68"></a>
+            <address class="address-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+            <a class="number-phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
+          <nav class="navigation-footer">
+            <ul class="site-navigation-footer">
+              <li>
+                <a href="#">Компания</a></li>
+              <li>
+                <a href="#">Новости</a></li>
+              <li>
+                <a href="catalog.html">Каталог</a></li>
+              <li>
+                <a href="#">Доставка</a></li>
+              <li>
+                <a href="#">Контакты</a></li>
+            </ul>
+            <ul class="navigation-features-footer">
+              <li>
+                <a href="#">Материалы</a></li>
+              <li>
+                <a href="#">Техника</a></li>
+              <li>
+                <a href="#">Инструмент</a></li>
+              <li>
+                <a href="#">Спецпредложения</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
     </div>
     <div class="footer-copyright-wrapper">
-      <section class="footer-copyright">
-        <p class="copyright">&copy; 2010–2019 Компания «Техномарт»<br>
-          Все права защищены</p>
-        <ul class="footer-social">
-          <li>
-            <a class="social-button" href="#">Вконтакте</a></li>
-          <li>
-            <a class="social-button" href="#">Фейсбук</a></li>
-          <li>
-            <a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-        <div class="footer-copyright-link">
-          <p class="copyright-link">Обратная связь<br>
-            <a class="link-footer" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p class="copyright-link">Разработано -<br>
-            <a class="link-footer" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
-        </div>
-      </section>
+      <div class="container">
+        <section class="footer-copyright">
+          <p class="copyright">&copy; 2010–2019 Компания «Техномарт»<br>
+            Все права защищены</p>
+          <ul class="footer-social">
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Вконтакте
+                </span></a></li>
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Фейсбук
+                </span></a></li>
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Инстаграм
+                </span></a></li>
+          </ul>
+          <div class="footer-copyright-link">
+            <p class="copyright-link">Обратная связь:<br>
+              <a class="link-footer" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p class="copyright-link">Разработано -<br>
+              <a class="link-footer" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+          </div>
+        </section>
+      </div>
     </div>
   </footer>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <p><img src="img/map-big.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    <p><img src="img/map-big.png" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <button class="button button-close" type="button">Закрыть</button>
     </p>
   </section>
