@@ -741,6 +741,17 @@ a.home::after {
   border: 1px solid #e5e5e5;
 }
 
+.button-filters:hover,
+.button-filters:focus {
+  border-color: #32425c;
+}
+
+.button-filters:active {
+  color: #c1c6ce;
+
+  border-color: #c1c6ce;
+}
+
 
 /* ---MAIN-CATALOG-catalog--- */
 
@@ -1071,13 +1082,20 @@ a.home::after {
 
 .whrite-us-button:hover,
 .about-us-button:hover,
+.button-checkout:hover,
+.button-send:hover,
 .whrite-us-button:focus,
-.about-us-button:focus {
+.about-us-button:focus,
+.button-checkout:focus,
+.button-send:focus {
   background: #ca2c37;
 }
 
+
 .whrite-us-button:active,
-.about-us-button:active {
+.about-us-button:active,
+.button-checkout:active,
+.button-send:active {
   background: #ba2732;
 }
 
@@ -1271,10 +1289,37 @@ a.home::after {
   }
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-active {
   display: block;
 
   animation-name: zoom;
+  animation-duration: 0.5s;
+}
+
+.modal-error {
+  animation-name: shake;
   animation-duration: 0.5s;
 }
 
@@ -1471,6 +1516,10 @@ a.home::after {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.button-continue:active {
+  color: #c1c6ce;
 }
 
 .visually-hidden:not(:focus):not(:active),
