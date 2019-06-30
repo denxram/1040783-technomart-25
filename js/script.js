@@ -35,7 +35,7 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
-var whriteUs = document.querySelector(".whrite-us-button");
+var message = document.querySelector(".message-button");
 var popup = document.querySelector(".modal-login");
 var close = document.querySelector(".button-close");
 var login = document.querySelector(".user-info .login");
@@ -50,7 +50,7 @@ try {
   isStorageSupport = false;
 }
 
-whriteUs.addEventListener("click", function (evt) {
+message.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-active");
   if (storage) {
